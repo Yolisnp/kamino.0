@@ -1,0 +1,59 @@
+/* 
+
+Project Name: Cookie Monster 
+Client: Cookie Monster
+Author: Chris Castiglione | www.twitter.com/castig | www.castig.org 
+Developed @ One Month in NYC 
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+	background: url('../images/yoli.jpg');
+	/* the follow is the code to have the image display as a full page */
+	
+	font-family: 'Montserrat' ,sans-serif;
+
+}
+
+
+
+#container 
+{
+	background-color: goldenrod;
+	color: white;
+	width: 520px;
+	padding: 30px;
+	border: 10px;
+	
+ 
+}
+h1
+{
+	font-size: 60px;
+	font-style: bold;
+
+}
+
+h2
+{
+	font-size: 30px;
+	color: lightgoldenrodyellow;
+	background: darkgoldenrod;
+	border-image-outset: 1px;
+	padding: 10px;
+	border-radius: 10px;
+ 
+}
+
+a
+{
+	
+	color: lightgoldenrodyellow;
+	text-decoration: blink;
+
+}
+iframe {
+	padding: 20px;
+}
+
