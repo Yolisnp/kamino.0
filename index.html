@@ -1,52 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    	<meta charset="utf-8">
-    	<meta name="keywords" content="cookies, c, monster, Sesame Street">
-    	<meta name="description" content="I love cookies big and small, I love cookies I love them all.">
+  <title>Plataforma de transporte</title>
+  <style type="text/css">
+    * {
+  box-sizing: border-box;
+}
 
-		<title>Yolanda CV</title>
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0;
+  background-color: lightblue;
+}
 
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/styley.css">
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #00b8d4;
+  font-size: 2rem;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+header nav li {
+  margin: 0 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  color: #00b8d4;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 36px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+main .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px 0;
+}
+
+main .services .service {
+  width: 30%;
+  text-align: center;
+}
+
+main .services .service img {
+  width: 50%;
+  margin: 20px 0;
+}
+
+main .services .service h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+main .services .service p {
+  font-size: 18px;
+  line-height: 24px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+footer a {
+  color: #00b8d4;
+}
+.logo{
+  width: 370px;
+}
+h1, h2,h3,p {padding: 30px;
+margin: 30px;
+}
+.padd {padding: 45px;
+margin: 45px;
+font-size: 2.5rem;
+line-height: 3.5rem;
+
+}
+.caja{
+  width: 30rem;
+  height: 3rem;
+}
+
+.menu 
+{}
+.enviar{
+  font-size: 2rem;
+  width: 20rem;
+  height: 3rem;
+}
 
 
-<style type="text/css">
 
 
-</style>
+  </style>
 
 
 </head>
-
-
 <body>
-	<div id="container">
-	<h1>Yolanda Navarro </h1>
-	<h2>MARKETING, ENTREPRENEUR & FRONT END DEV.</h2>
+  <!-- Encabezado con logo y menú de navegación -->
+  <header>
+    <img src="logo.png" class="logo" alt="Logo de la plataforma de transporte">
+    <nav >
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Transportistas</a></li>
+        <li><a href="#">Empresas</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Sección de bienvenida con información sobre la plataforma -->
+  <section>
+    <h1>Bienvenido a la plataforma de transporte</h1>
+    <p>Nuestra plataforma conecta a transportistas con cajas vacías con empresas que necesitan transporte para sus productos. Ofrecemos una amplia variedad de opciones de transporte y precios, y herramientas de seguimiento y pago seguro y rápido.</p>
+  </section>
+  
+  <!-- Sección con formulario de registro para transportistas -->
+  <section>
+    <h2>Regístrate como transportista</h2>
+    <form class="padd">
+      <label for="nombre">Nombre:</label><br>
+      <input class="caja" type="text" id="nombre" name="nombre"><br>
+      <label for="email">Email:</label><br>
+      <input class="caja" type="email" id="email" name="email"><br>
+      <label for="telefono">Teléfono:</label><br>
+      <input class="caja" type="tel" id="telefono" name="telefono"><br>
+      <input class="enviar" type="submit" value="Enviar">
+    </form> 
+  </section>
+  
+  <!-- Sección con formulario de registro para empresas -->
+  <section>
+    <h2>Regístrate como empresa</h2>
+    <form class="padd">
+      <label for="nombre">Nombre de la empresa:</label><br>
+      <input class="caja"type="text" id="nombre" name="nombre"><br>
+      <label for="email">Email:</label><br>
+      <input class="caja"type="email" id="email" name="email"><br>
+      <label for="telefono">Teléfono
+        :</label><br>
+<input class="caja"type="tel" id="telefono" name="telefono"><br>
+<label for="direccion">Dirección:</label><br>
+<input class="caja"type="text" id="direccion" name="direccion"><br>
+<input class="enviar" type="submit" value="Enviar">
+</form>
 
-	<h3>ABOUT ME.</h3>
-
-	<p>I'm a mexican solution driven entrepreneur and developer that believes that the most important part of a company is building the team. I have 7 years of experience in healthcare, and I want to change the way we approach it.</p>
-
-	<p>My company is named <a href="https://www.kalaclub.mx//" target="blank">Kala</a>. And if you want to see me in action please watch my <a href="https://www.youtube.com/channel/UCqvP89EJUXcAK4pBk0q8Ztw/featured" target="blank">pitch</a> demo reel where I explain what it is about.</p>
-
-	<a href="https://twitter.com/#!/yolisnp" target="blank">
-		<img src="images/social-twitter.png" alt="twitter" ></a>
-
-
-	<a href="https://www.facebook.com/kalaclubmx/" target="blank">
-		<img src="images/social-facebook.png" alt="facebook"></a>
-
-<iframe width="460" height="215" src="https://www.youtube.com/embed/twsyM7TtLoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	
-		
-
-	<!-- END HERE --> 
-	</div><!-- #container --> 
+  </section>
+  <!-- Sección con testimonios de usuarios satisfechos -->
+  <section>
+    <h2>Lo que dicen nuestros usuarios</h2>
+    <blockquote>
+      <p>"La plataforma de transporte ha sido una herramienta muy útil para mi empresa. Hemos encontrado transportistas confiables y rápidos a precios muy competitivos. Además, el sistema de seguimiento y pago es muy fácil de usar."</p>
+      <cite>Juan Pérez, Gerente de Logística, Empresa XYZ</cite>
+    </blockquote>
+    <blockquote>
+      <p>"Antes de usar la plataforma de transporte, tenía muchas dificultades para encontrar carga para mis camiones. Ahora tengo un flujo constante de solicitudes y he podido aumentar significativamente mis ingresos."</p>
+      <cite>Ana Martínez, Transportista independiente</cite>
+    </blockquote>
+  </section>
+  <!-- Pie de página con información de contacto y enlaces a redes sociales -->
+  <footer>
+    <p>Contacto: info@transporte.com</p>
+    <p>Síguenos en:</p>
+    <ul>
+      <li><a href="#"><img src="facebook.png" alt="Icono de Facebook"></a></li>
+      <li><a href="#"><img src="twitter.png" alt="Icono de Twitter"></a></li>
+      <li><a href="#"><img src="instagram.png" alt="Icono de Instagram"></a></li>
+    </ul>
+  </footer>
 </body>
 </html>
-
-
-
-
