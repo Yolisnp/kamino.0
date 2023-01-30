@@ -21,7 +21,7 @@ body{
 
 form {
     outline: 0;
-    height: 23px;
+    height: 25px;
     margin-top: 3%;
     border: 1px solid black;
     border-radius: 3px;
@@ -35,7 +35,7 @@ form {
 input[type="text"] {
     outline: 0;
     width: 50%;
-    height: 20px;
+    height: 29px;
     border: none;
     font-size: 12px;
    font-family: "Lucida Console", "Courier New", monospace;
