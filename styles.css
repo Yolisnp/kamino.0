@@ -1,0 +1,120 @@
+body{
+  font-family: "Copperplate",fantasy;
+
+  background-color: floralwhite;
+
+    background-size: 100%;
+
+
+}
+
+.container {
+    margin: 0 auto;
+    min-width: 300px;
+    width: 40%;
+    text-align: left;
+    color: #3b3b3b;
+    
+   
+
+}
+
+form {
+    outline: 0;
+    height: 23px;
+    margin-top: 3%;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 3%;
+    border-color: darkgoldenrod;
+  
+
+
+}
+
+input[type="text"] {
+    outline: 0;
+    width: 50%;
+    height: 20px;
+    border: none;
+    font-size: 12px;
+   font-family: "Lucida Console", "Courier New", monospace;
+    padding-left: 10px;
+    border-radius: 3px;
+  background-color: floralwhite;
+}
+
+.add {
+   
+    float: right;
+    width: 30%;
+    height: 23px;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    border-color: darkgoldenrod;
+    cursor: pointer;
+    background-color: goldenrod;
+    border-radius: 2px;
+  border-width:2px;
+  font-family: "Copperplate",fantasy;
+}
+
+.night {
+   
+    float: right;
+    width: 85%;
+    height: 15px;
+    background-color: goldenrod;
+    margin-top: 4px;
+    margin-right: 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    
+}
+
+ul {
+    padding: 0;
+    text-align: left;
+    list-style: none;
+}
+
+hr {
+    border-bottom: 0;
+    margin: 9px 0;
+    border-color: darkgoldenrod;
+}
+
+input[type="checkbox"] {
+    width: 30px;
+
+}
+
+.delete {
+    margin-right: 19px;
+    padding: 3px;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+#list-items{
+    font-size: 18px;
+    font-weight: 200;
+    margin: 9px;
+}
+p{
+    font-size: 15px;
+    font-family: "Copperplate",fantasy;
+    margin: 2px;
+}
+h1{
+    font-family: "Copperplate",fantasy;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+}

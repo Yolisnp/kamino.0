@@ -1,223 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Plataforma de transporte</title>
-  <style type="text/css">
-    * {
-  box-sizing: border-box;
-}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chavarros Pendientes</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="index.js"></script>
 
-body {
-  font-family: Verdana, Geneva, sans-serif;
-  margin: 0;
-  background-color: lightblue;
-}
+    </head>
+    <body>
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        
+        <button class="night" ></button>
+    
 
-header h1 {
-  margin: 0;
-  font-size: 24px;
-  color: #00b8d4;
-  font-size: 2rem;
-}
+        <div class="container">
+            <h1>Pendientes Chavarros</h1>
+                 <p>¿Que tienes que hacer hoy?</p>
+            <form class="add-items">
+                <input type="text" class="form-control" id="todo-list-item" placeholder="Echa el pendiente...">
+                <button class="add" type="submit">Agregar</button>
+            </form>
+            <ul id="list-items">
+                
+          
+            </ul>
+        </div>
 
-header nav {
-  display: flex;
-}
-
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-
-}
-
-header nav li {
-  margin: 0 10px;
-}
-
-header nav a {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-}
-
-header nav a:hover {
-  color: #00b8d4;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-main h2 {
-  font-size: 36px;
-  margin: 20px 0;
-  text-align: center;
-}
-
-main .services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 80%;
-  margin: 20px 0;
-}
-
-main .services .service {
-  width: 30%;
-  text-align: center;
-}
-
-main .services .service img {
-  width: 50%;
-  margin: 20px 0;
-}
-
-main .services .service h3 {
-  font-size: 24px;
-  margin: 10px 0;
-}
-
-main .services .service p {
-  font-size: 18px;
-  line-height: 24px;
-  width: 80%;
-  margin: 0 auto;
-}
-
-footer {
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-  font-size: 14px;
-  text-align: center;
-  color: #333;
-  margin: 0;
-}
-
-footer a {
-  color: #00b8d4;
-}
-.logo{
-  width: 370px;
-}
-h1, h2,h3,p {padding: 30px;
-margin: 30px;
-}
-.padd {padding: 45px;
-margin: 45px;
-font-size: 2.5rem;
-line-height: 3.5rem;
-
-}
-.caja{
-  width: 30rem;
-  height: 3rem;
-}
-
-.menu 
-{}
-.enviar{
-  font-size: 2rem;
-  width: 20rem;
-  height: 3rem;
-}
-
-
-
-
-  </style>
-
-
-</head>
-<body>
-  <!-- Encabezado con logo y menú de navegación -->
-  <header>
-    <img src="logo.png" class="logo" alt="Logo de la plataforma de transporte">
-    <nav >
-      <ul class="menu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Transportistas</a></li>
-        <li><a href="#">Empresas</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <!-- Sección de bienvenida con información sobre la plataforma -->
-  <section>
-    <h1>Bienvenido a la plataforma de transporte</h1>
-    <p>Nuestra plataforma conecta a transportistas con cajas vacías con empresas que necesitan transporte para sus productos. Ofrecemos una amplia variedad de opciones de transporte y precios, y herramientas de seguimiento y pago seguro y rápido.</p>
-  </section>
-  
-  <!-- Sección con formulario de registro para transportistas -->
-  <section>
-    <h2>Regístrate como transportista</h2>
-    <form class="padd">
-      <label for="nombre">Nombre:</label><br>
-      <input class="caja" type="text" id="nombre" name="nombre"><br>
-      <label for="email">Email:</label><br>
-      <input class="caja" type="email" id="email" name="email"><br>
-      <label for="telefono">Teléfono:</label><br>
-      <input class="caja" type="tel" id="telefono" name="telefono"><br>
-      <input class="enviar" type="submit" value="Enviar">
-    </form> 
-  </section>
-  
-  <!-- Sección con formulario de registro para empresas -->
-  <section>
-    <h2>Regístrate como empresa</h2>
-    <form class="padd">
-      <label for="nombre">Nombre de la empresa:</label><br>
-      <input class="caja"type="text" id="nombre" name="nombre"><br>
-      <label for="email">Email:</label><br>
-      <input class="caja"type="email" id="email" name="email"><br>
-      <label for="telefono">Teléfono
-        :</label><br>
-<input class="caja"type="tel" id="telefono" name="telefono"><br>
-<label for="direccion">Dirección:</label><br>
-<input class="caja"type="text" id="direccion" name="direccion"><br>
-<input class="enviar" type="submit" value="Enviar">
-</form>
-
-  </section>
-  <!-- Sección con testimonios de usuarios satisfechos -->
-  <section>
-    <h2>Lo que dicen nuestros usuarios</h2>
-    <blockquote>
-      <p>"La plataforma de transporte ha sido una herramienta muy útil para mi empresa. Hemos encontrado transportistas confiables y rápidos a precios muy competitivos. Además, el sistema de seguimiento y pago es muy fácil de usar."</p>
-      <cite>Juan Pérez, Gerente de Logística, Empresa XYZ</cite>
-    </blockquote>
-    <blockquote>
-      <p>"Antes de usar la plataforma de transporte, tenía muchas dificultades para encontrar carga para mis camiones. Ahora tengo un flujo constante de solicitudes y he podido aumentar significativamente mis ingresos."</p>
-      <cite>Ana Martínez, Transportista independiente</cite>
-    </blockquote>
-  </section>
-  <!-- Pie de página con información de contacto y enlaces a redes sociales -->
-  <footer>
-    <p>Contacto: info@transporte.com</p>
-    <p>Síguenos en:</p>
-    <ul>
-      <li><a href="#"><img src="facebook.png" alt="Icono de Facebook"></a></li>
-      <li><a href="#"><img src="twitter.png" alt="Icono de Twitter"></a></li>
-      <li><a href="#"><img src="instagram.png" alt="Icono de Instagram"></a></li>
-    </ul>
-  </footer>
-</body>
+    </body>
 </html>
